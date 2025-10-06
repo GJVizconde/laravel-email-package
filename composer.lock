@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30f0c4a8528907ae16fbbb63691bcfae",
+    "content-hash": "8cf0690f7898ba652b39259613bbbd01",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -480,6 +480,54 @@
                 }
             ],
             "time": "2024-02-05T11:56:58+00:00"
+        },
+        {
+            "name": "doitcloud/email-service",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DoITCloudConsulting/EmailService.git",
+                "reference": "563317614aa3b362c6b45eb188222076de126ef4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DoITCloudConsulting/EmailService/zipball/563317614aa3b362c6b45eb188222076de126ef4",
+                "reference": "563317614aa3b362c6b45eb188222076de126ef4",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.9"
+            },
+            "default-branch": true,
+            "type": "laravel-library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Doitcloud\\EmailService\\EmailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doitcloud\\EmailService\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hugo Hernandez",
+                    "email": "hugo@doitcloud.consulting"
+                }
+            ],
+            "description": "This package install the controllers to send emails from a connected app in office365",
+            "support": {
+                "issues": "https://github.com/DoITCloudConsulting/EmailService/issues",
+                "source": "https://github.com/DoITCloudConsulting/EmailService/tree/main"
+            },
+            "time": "2025-09-14T07:16:45+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -9100,7 +9148,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "doitcloud/email-service": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
